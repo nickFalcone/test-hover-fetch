@@ -1,0 +1,14 @@
+{
+  "name": "test-hover-fetch",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "browserify app.js -o bundle.js && http-server",
+    "deploy": "browserify app.js -o bundle.js && surge"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
