@@ -5,7 +5,9 @@
     "dev": "browserify app.js -o bundle.js && http-server",
     "deploy": "browserify app.js -o bundle.js && surge"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@nfalcone/hover-fetch": "0.1.0-alpha"
+  },
   "devDependencies": {
     "eslint": "^7.18.0",
     "eslint-config-airbnb-base": "^14.2.1",
