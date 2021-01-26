@@ -11,6 +11,8 @@
   "devDependencies": {
     "eslint": "^7.18.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.22.1"
+    "eslint-plugin-import": "^2.22.1",
+    "http-server": "^0.12.3",
+    "surge": "^0.21.7"
   }
 }

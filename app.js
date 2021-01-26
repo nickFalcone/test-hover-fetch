@@ -3,6 +3,7 @@ const hoverFetch = require('@nfalcone/hover-fetch');
 const addLink = document.querySelector('#addLinks');
 const linkList = document.querySelector('.list-of-links');
 
+// Dynamically added links
 addLink.addEventListener('click', () => {
   const listItem = document.createElement('li');
   const textNode = document.createTextNode(
@@ -16,8 +17,10 @@ addLink.addEventListener('click', () => {
   linkList.appendChild(anchor);
 });
 
+// Links at build time
 const anchors = [...document.querySelectorAll('a')];
 
+// Initiate a prefetch request on hover
 anchors.forEach((anchor) => {
   hoverFetch(anchor);
 });
