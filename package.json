@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "browserify app.js -o bundle.js && http-server",
+    "test": "jest",
     "deploy": "browserify app.js -o bundle.js && surge --domain hover-fetch.surge.sh"
   },
   "dependencies": {
@@ -13,6 +14,10 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
     "http-server": "^0.12.3",
+    "jest": "^26.6.3",
+    "jest-puppeteer": "^4.4.0",
+    "jsdom": "^16.4.0",
+    "puppeteer": "^7.0.4",
     "surge": "^0.21.7"
   }
 }
